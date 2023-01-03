@@ -31,7 +31,7 @@ with open('EIGENVAL', 'r') as f:
 		Ecb1 = float(f.readline().split()[1]) - Ef
 		gap = Ecb1 - Evb1
 		#if gap < gap_tol:
-		#	data.append(kpoint_coord + ' ' + str(gap) + '\n')	
+		data.append(kpoint_coord + ' ' + str(gap) + '\n')	
 
 		for j in range(nbnds - noccupancy - 1):
 			f.readline()
